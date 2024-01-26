@@ -16,10 +16,14 @@
             padding: 0px; /* margem interna*/
         }
         #principal {
-            /* font-family: 'Inter'; */
+            font-family: 'Inter';
             width: 100%; 
             height: 100px;
             background-color: #303030;
+
+            display: flex;
+            /* distribui o espaço que sobra entre elementos. Jogar o botão para o canto esquerdo */
+            justify-content: space-between;
            
         }
 
@@ -29,13 +33,25 @@
             color: white;
             text-decoration: none;
         }
-       
+        
+        #menu {
+            display: flex;
+            width: 55%;
+
+            /* espaçar componentes igualitariamente entre os elementos */
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #principal button {
+            margin-right: 5%;
+        }
 
     </style>
 </head>
 <body>
     <nav id="principal">
-        <div>
+        <div id="menu">
         <a id="" class="" href="">Home</a>
         <a href="">Últimas Edições</a>
         <a href="">Requisitos para Participar</a>
