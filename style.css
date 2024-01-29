@@ -314,6 +314,19 @@ body {
                     margin: 0px;
                 }
 
+                /* Gradiente */
+
+                body {
+                    margin: 0x; /* margem externa*/
+                    padding: 0px; /* margem interna*/
+                
+                    /* Gradiente */
+                    background: linear-gradient(180deg, rgba(12,112,242, 0.5)19.19%, rgba(12, 112,242,0.1)24.84%),#303030;
+                    background-repeat: no-repeat;
+                }
+
+
+                
                 /* Section */
 
                 section h1 {
@@ -334,4 +347,28 @@ body {
                 .checkbox-itens label {
                     font-size: 16px;
                 }
+
+                input[type="submit"] {
+                    
+                    margin-top: 35px;
+                    
+                } 
+
+                /* Footer */
+
+                footer .linha1{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                footer .endereco {
+                    width: 95%;
+                    margin-bottom: 20px;
+                }
+
+                footer .linha2 {
+                    font-size: 18px;
+                }
+
+
             }
