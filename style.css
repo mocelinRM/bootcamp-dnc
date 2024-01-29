@@ -254,3 +254,29 @@ body {
                 width: 20%;
                 text-align: center;
             }
+            
+            footer .linha2 {
+                height: 35px;
+                
+                font-weight: 600;
+                font-size: 25px;
+                font-family: var(--fonte-padrao);
+                text-align: center;
+                margin: 0px;
+                padding: 30px;
+            }
+
+            footer .linha2 a:hover {
+                color: var(--cinza-hover);
+            }
+
+            footer .linha2 a{
+                color: white;
+                text-decoration: none;
+                padding: 5px;
+            }
+
+            /* borda no primeiro item */
+            footer .linha2 a:first-child {
+                border-right: 3px solid white;
+            }
