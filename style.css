@@ -1,0 +1,63 @@
+body {
+    margin: 0x; /* margem externa*/
+    padding: 0px; /* margem interna*/
+}
+
+/* Menu de navegação principal */
+#principal {
+    font-family: 'Inter';
+    width: 100%; 
+    height: 100px;
+    background-color: #303030;
+
+    display: flex;
+    /* distribui o espaço que sobra entre elementos. Jogar o botão para o canto esquerdo */
+    justify-content: space-between;
+   
+    align-items: center;
+
+    /* borda com cor */
+    border-bottom: 1px solid #BABABA;
+}
+
+    #principal div a {
+        font-size: 25px;
+        font-weight: 600;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* pseudo-classe no link, quando passa o mouse em cima. Seletor hover */
+    #principal div a:hover {
+        color: #CCCCCC;
+    }
+
+    #menu {
+        display: flex;
+        width: 45%;
+
+        /* espaçar componentes igualitariamente entre os elementos */
+        justify-content: space-around;
+        align-items: center;
+
+        margin-left: 5%;
+
+    }
+
+    #principal button {
+        margin-right: 5%;
+    
+        background-color: #0C70F2;
+        border: 0px;
+        height: 40px;
+        width: 80px;
+        color: white;
+        font-family: 'Inter';
+        font-size: 20px;
+        font-weight: 600;
+        /* sombra com transparência */
+        box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+
+        /* mouse no button */
+        cursor: pointer;
+    }
