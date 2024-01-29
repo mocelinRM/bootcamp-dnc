@@ -1,3 +1,16 @@
+
+
+/* definir variáveis globais */
+/* tipos de cores, tamanhos de letras, tipo de fontes */
+:root {
+    --azul-dnc: #0C70f2;
+    --preto-dnc: #303030;
+    --cinza-hover: #C9C9C9;
+
+    --fonte-padrao: 'Inter';
+}
+
+
 body {
     margin: 0x; /* margem externa*/
     padding: 0px; /* margem interna*/
@@ -5,6 +18,8 @@ body {
     /* Gradiente */
     background: linear-gradient(180deg, rgba(12,112,242, 0.5)19.19%, rgba(12, 112,242,0)24.84%),#303030;
     background-repeat: no-repeat;
+
+    color: white;
 }
 
 /* Menu de navegação principal */
@@ -12,7 +27,7 @@ body {
     font-family: 'Inter';
     width: 100%; 
     height: 100px;
-    background-color: #303030;
+    background-color: var(--preto-dnc);
 
     display: flex;
     /* distribui o espaço que sobra entre elementos. Jogar o botão para o canto esquerdo */
@@ -25,6 +40,7 @@ body {
 }
 
     #principal div a {
+        font-family: var(--fonte-padrao);
         font-size: 25px;
         font-weight: 600;
         color: white;
@@ -33,7 +49,7 @@ body {
 
     /* pseudo-classe no link, quando passa o mouse em cima. Seletor hover */
     #principal div a:hover {
-        color: #CCCCCC;
+        color: var(--cinza-hover);
     }
 
     #menu {
@@ -51,12 +67,12 @@ body {
     #principal button {
         margin-right: 5%;
     
-        background-color: #0C70F2;
+        background-color: var(--azul-dnc);
         border: 0px;
         height: 40px;
         width: 80px;
         color: white;
-        font-family: 'Inter';
+        font-family: var(--fonte-padrao);
         font-size: 20px;
         font-weight: 600;
         /* sombra com transparência */
@@ -65,3 +81,44 @@ body {
         /* mouse no button */
         cursor: pointer;
     }
+
+    /* Seção Principal do Site */
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+        header {
+            color: white;
+            font-family: var(--fonte-padrao);
+        }
+
+            header h1 {
+                font-size: 80px;
+                font-weight: 800;
+                text-transform: uppercase;
+                font-weight: bolder;
+
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            header h2 {
+                text-align: center;
+                font-size: 40px;
+                font-weight: 700;
+
+                margin-bottom: 100px;
+            }
+
+            header .invert {
+                background-color: black;
+                font-weight: bold;
+                padding: 5px;
+            }
